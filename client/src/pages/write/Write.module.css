@@ -1,0 +1,21 @@
+.rootBox {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorBox {
+  width: 1000px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid black;
+}

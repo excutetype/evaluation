@@ -1,0 +1,7 @@
+module.exports = {
+  errorKind: {
+    SERVICE_ERROR: "SERVICE_ERROR",
+    REPOSITORY_ERROR: "REPOSITORY_ERROR",
+    UNDEFINED_ERROR: "UNDEFINED_ERROR",
+  },
+};
