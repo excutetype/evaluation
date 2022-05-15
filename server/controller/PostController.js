@@ -7,7 +7,7 @@ module.exports = {
     const author = "test author";
 
     try {
-      await PostsSerivce.save(title, content);
+      await PostsSerivce.save(title, content, author);
     } catch (err) {
       next(err);
     }

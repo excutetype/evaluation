@@ -3,19 +3,30 @@
   height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-color: #1572a1;
 }
 
-.contentBox {
-  display: flex;
-  flex-direction: column;
-}
-
-.editorBox {
-  width: 1000px;
+.editor {
+  width: 50%;
 
   margin-bottom: 20px;
 
-  border: 1px solid black;
+  border: 7px solid #9ad0ec;
+}
+
+.submitBtn {
+  width: 70px;
+  height: 30px;
+
+  border: 1px solid white;
+  border-radius: 10px;
+
+  background-color: #046582;
+  color: wheat;
+
+  cursor: pointer;
 }

@@ -1,16 +1,47 @@
-.rootBox {
-  width: 100vw;
-  height: 100vh;
-
+.posts {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  padding: 20px;
-
-  background-color: tomato;
+  margin-top: 100px;
 }
 
-.contentBox {
-  width: 700px;
+.post {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-top: 1px solid gray;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 7px;
+}
+
+.detail {
+  margin-bottom: 20px;
+}
+
+.tagBox {
+  margin-right: 20px;
+}
+
+.tag {
+  margin-right: 20px;
+  padding: 3px 5px 3px 5px;
+  background-color: #9ad0ec;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.metaBox {
+  display: flex;
+  justify-content: end;
+}
+
+.author {
+  margin-right: 30px;
 }
