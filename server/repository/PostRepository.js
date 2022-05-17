@@ -1,8 +1,8 @@
-const post = require("../models/").post;
+const post = require("../models").post;
 const RepositoryError = require("../error/RepositoryError");
 
 module.exports = {
-  create: (title, content, author) => {
+  create: ({ title, content, author }) => {
     return new Promise((resolve, reject) => {
       post
         .create({

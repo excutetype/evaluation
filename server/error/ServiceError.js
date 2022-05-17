@@ -8,4 +8,11 @@ module.exports = {
       this.kind = errorConstant.errorKind.SERVICE_ERROR;
     }
   },
+  EntryServiceError: class EntryServiceError extends Error {
+    constructor(message) {
+      super(message);
+      this.name = "EntryServiceError";
+      this.kind = errorConstant.errorKind.SERVICE_ERROR;
+    }
+  },
 };

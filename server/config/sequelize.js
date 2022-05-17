@@ -21,6 +21,12 @@ const production = {
   database: process.env.DB_DATABASE,
   host: process.env.DB_HOST,
   dialect: "mysql",
+  define: {
+    freezeTableName: true,
+  },
+  dialectOptions: {
+    decimalNumbers: true,
+  },
 };
 
 const test = {
@@ -29,6 +35,12 @@ const test = {
   database: process.env.DB_DATABASE,
   host: process.env.DB_HOST,
   dialect: "mysql",
+  define: {
+    freezeTableName: true,
+  },
+  dialectOptions: {
+    decimalNumbers: true,
+  },
 };
 
 module.exports = { development, production, test };

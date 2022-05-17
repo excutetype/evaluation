@@ -1,10 +1,10 @@
-const PostsRepository = require("../repository/PostsRepository");
+const PostsRepository = require("../repository/PostRepository");
 const ServiceError = require("../error/ServiceError");
 
 module.exports = {
-  save: async (title, content, author) => {
+  save: async (postData) => {
     try {
-      const createPost = await PostsRepository.create(title, content, author);
+      const createPost = await PostsRepository.create(postData);
       return createPost;
     } catch (errMsg) {
       throw new ServiceError.PostServiceError(
